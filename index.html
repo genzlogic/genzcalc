@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GenzCalc – Every calculator. One app.</title>
+<meta name="description" content="GenzCalc is an offline all-in-one calculator app for finance, health, business, education, travel, home, vehicles, construction and unit conversions.">
+<link rel="icon" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0b1530;--navy:#0e1b40;--blue:#1f6bff;--violet:#6c4dff;--mist:#f5f8ff;--text:#3d4863;--line:#dde5f5}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:400 17px/1.65 "Plus Jakarta Sans",system-ui,sans-serif;color:var(--text);background:#fff}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--violet);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header.top{background:var(--navy)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:800;font-size:20px;text-decoration:none}
+.brand img{width:40px;height:40px;border-radius:22%}
+nav a.plain{color:#b9c6ee;text-decoration:none;font-weight:500;font-size:15px;margin-left:24px}
+nav a.plain:hover{color:#fff}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:48px 0 0}
+.hero h1{font-size:clamp(44px,7vw,76px);line-height:1.02;font-weight:800;letter-spacing:-.035em;color:#fff}
+.hero h1 span{display:block;background:linear-gradient(90deg,#4f8bff,#a08bff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:#b9c6ee;font-size:19px;max-width:30em;margin:24px 0 32px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--ink);font-weight:700;text-decoration:none;padding:14px 24px;border-radius:14px}
+.btn:hover{background:var(--mist)}
+.note{font-size:14px;color:#8da0d6;margin-top:14px}
+.shot{justify-self:center;width:min(100%,340px);height:520px;overflow:hidden;border-radius:28px 28px 0 0;-webkit-mask-image:linear-gradient(#000 80%,transparent);mask-image:linear-gradient(#000 80%,transparent)}
+.shot img{width:100%;display:block}
+section{padding:88px 0}
+h2{font-size:clamp(30px,4.4vw,44px);line-height:1.1;font-weight:800;letter-spacing:-.025em;color:var(--ink);margin-bottom:16px;max-width:16em}
+.lead{max-width:38em;margin-bottom:40px}
+.cats{display:flex;flex-wrap:wrap;gap:10px}
+.cats li{list-style:none;padding:10px 18px;border:1.5px solid var(--line);border-radius:999px;font-weight:500;color:var(--ink)}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:48px 40px}
+.feat h3{font-size:19px;color:var(--ink);margin-bottom:6px}
+.feat p{font-size:16px}
+.alt{background:var(--mist)}
+.gallery{display:flex;gap:20px;overflow-x:auto;padding:4px 24px 24px;scroll-snap-type:x mandatory}
+.gallery img{height:560px;width:auto;border-radius:22px;scroll-snap-align:start;box-shadow:0 10px 30px rgba(14,27,64,.15);flex:none}
+.offline{background:var(--navy);color:#b9c6ee}
+.offline h2{color:#fff}
+.offline p{max-width:36em}
+.offline a{color:#fff}
+footer{padding:36px 0;font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.shot{height:420px}.feat{grid-template-columns:1fr;gap:32px}section{padding:64px 0}.gallery img{height:460px}}
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="wrap">
+  <nav aria-label="Main">
+   <a class="brand" href="#"><img src="assets/icon.png" alt="">GenzCalc</a>
+   <div><a class="plain" href="#features">Features</a><a class="plain" href="#screens">Screenshots</a><a class="plain" href="privacy.html">Privacy</a></div>
+  </nav>
+  <div class="hero">
+   <div>
+    <h1>Every calculator.<span>One app.</span></h1>
+    <p>Loans, SIPs, BMI, discounts, unit conversions and more, all in one fast calculation hub. No switching apps. No internet needed.</p>
+    <a class="btn" href="#" id="store">Download on the App Store</a>
+    <p class="note">Coming soon to iPhone</p>
+   </div>
+   <div class="shot"><img src="assets/01-home.png" alt="GenzCalc home screen with search, quick access and categories"></div>
+  </div>
+ </div>
+</header>
+
+<section id="features">
+ <div class="wrap">
+  <h2>Ten categories, one place</h2>
+  <p class="lead">Keep the tools you need in one simple hub instead of a folder full of single-purpose calculator apps.</p>
+  <ul class="cats" style="padding:0">
+   <li>Finance</li><li>Health &amp; Fitness</li><li>Business</li><li>Education &amp; Grades</li><li>Travel</li><li>Home</li><li>Vehicles</li><li>Construction</li><li>Unit conversions</li><li>Everyday maths</li>
+  </ul>
+ </div>
+</section>
+
+<section class="alt">
+ <div class="wrap">
+  <h2>Built to get you to the answer</h2>
+  <p class="lead">Enter your numbers and see the result straight away, with the working beside it.</p>
+  <div class="feat">
+   <div><h3>Instant results</h3><p>Results update as you type, with a clear breakdown of every input and output.</p></div>
+   <div><h3>Formulas explained</h3><p>Calculators like EMI show the formula and what it means, so you know where the number comes from.</p></div>
+   <div><h3>Copy and share</h3><p>Copy a result or share the full breakdown in one tap.</p></div>
+   <div><h3>Favorites</h3><p>Heart a calculator to pin it to your Favorites tab and Quick Access row.</p></div>
+   <div><h3>History</h3><p>Every result is saved with its inputs, so you can revisit or clear it whenever you like.</p></div>
+   <div><h3>Your way</h3><p>Choose light, dark or system theme, your default currency, number format and decimal precision.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="screens" style="padding-left:0;padding-right:0">
+ <div class="wrap"><h2>See it in action</h2></div>
+ <div class="gallery" tabindex="0" aria-label="App screenshots">
+  <img src="assets/01-home.png" alt="Home screen with categories" loading="lazy">
+  <img src="assets/02-emi.png" alt="EMI and loan calculator with formula" loading="lazy">
+  <img src="assets/03-results.png" alt="Simple interest result with copy and share" loading="lazy">
+  <img src="assets/04-favorites.png" alt="Favorites list" loading="lazy">
+  <img src="assets/05-history.png" alt="Calculation history" loading="lazy">
+  <img src="assets/06-settings.png" alt="Settings for theme, currency and precision" loading="lazy">
+ </div>
+</section>
+
+<section class="offline">
+ <div class="wrap">
+  <h2>100% offline. Private by design.</h2>
+  <p>GenzCalc works without an internet connection and does not collect your personal data. Your calculations, favorites and history stay on your device. Read the full <a href="privacy.html">Privacy Policy</a>.</p>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap">
+  <span>© 2026 GenzCalc. All rights reserved.</span>
+  <span><a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></span>
+ </div>
+</footer>
+</body>
+</html>
